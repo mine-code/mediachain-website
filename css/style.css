@@ -125,9 +125,9 @@ input::-moz-focus-inner { padding: 0; border: 0; }
 .nav-holder .nav-main ul li.current-menu-item a:after,
 .nav-holder .nav-main ul li a:hover:after { width: calc(100% + 15px); }
 
-.nav-main { float: left; }
+.nav-main { float: left; margin-bottom: 35px; }
 
-/* dropdown */ 
+/* dropdown */
 .nav-dropdown { float: right; }
 .nav-dropdown li.menu-item-has-children { position: relative; }
 .nav-dropdown li.menu-item-has-children > a { padding: 0 20px 35px 0; position: relative; }
@@ -144,8 +144,8 @@ input::-moz-focus-inner { padding: 0; border: 0; }
 
 
 /* banner home */
-.banner-main { height: 560px; background: #eaeaea url('images/banner-bg.jpg') no-repeat center center; background-size: cover; } 
-.banner-main .shell { height: 100%; position: relative; } 
+.banner-main { height: 560px; background: #eaeaea url('images/banner-bg.jpg') no-repeat center center; background-size: cover; }
+.banner-main .shell { height: 100%; position: relative; }
 
 .banner-cnt-holder { position: absolute; top: 50%; left: 0; right: 0; }
 .banner-cnt-holder {
@@ -154,19 +154,19 @@ input::-moz-focus-inner { padding: 0; border: 0; }
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    
+
 }
-.banner-cnt { width: 50%; float: left; padding-right: 25px; box-sizing: border-box; }  
+.banner-cnt { width: 50%; float: left; padding-right: 25px; box-sizing: border-box; }
 .banner-cnt h2 { line-height: 52px; letter-spacing: 1px; padding-bottom: 20px; }
 .banner-cnt p { font-size: 18px; line-height: 28px; }
 
-.banner-form { width: 50%; float: left; padding-left: 45px; box-sizing: border-box; } 
-.banner-form-inner { width: 460px; float: right; } 
-.banner-form-inner h4 { padding-bottom: 35px; } 
+.banner-form { width: 50%; float: left; padding-left: 45px; box-sizing: border-box; }
+.banner-form-inner { width: 460px; float: right; }
+.banner-form-inner h4 { padding-bottom: 35px; }
 
 .form-container { position: relative; }
-.form-container .input-default { width: 100%; display: block; } 
-.form-container .input-default + .input-default { margin-top: 15px; } 
+.form-container .input-default { width: 100%; display: block; }
+.form-container .input-default + .input-default { margin-top: 15px; }
 .form-container .input-has-element { padding-right: 40px; }
 .form-container .submit-btn { position: absolute; top: 10px; right: 10px; background: transparent; width: 0; height: 0; border-style: solid; border-width: 0 20px 20px 0; border-color: transparent #00afef transparent transparent; transition: border-color .2s ease; }
 .form-container .submit-btn:hover { border-color: transparent #0038fe transparent transparent; }
@@ -174,7 +174,7 @@ input::-moz-focus-inner { padding: 0; border: 0; }
 .input-default { width: 300px; height: 40px; display: block; border: none; padding: 0 15px; }
 
 /* project-holder */
-.projects-holder { padding: 100px 0; background: url('images/bgel01.png') no-repeat center center; background-size: cover; }
+.projects-holder { padding: 100px 0; background: #eaeaea url('images/banner-bg.png') no-repeat center center; background-size: cover; }
 // .projects-holder:after { content: ''; background: url('images/bg-elements3.png') no-repeat left bottom; background-size: 60%; width: 420px; height: 256px; position: absolute; top: 0; left: 0; }
 .projects-holder .heading h2 { letter-spacing: 1px; padding-bottom: 30px; font-weight: bold; }
 .project-row + .project-row { margin-top: 100px; }
@@ -232,7 +232,7 @@ a.custom-link:hover { color: #00afef; text-decoration: none; }
 .testim-box a:hover { color: #00afef; }
 
 /* tabs */
-.tabs-section { background: #eaeaea; padding: 100px 0;  }
+.tabs-section { padding: 100px 0;  }
 
 .tabs-nav { padding-bottom: 100px; }
 .tabs-nav ul { list-style-type: none; }
@@ -249,7 +249,8 @@ a.custom-link:hover { color: #00afef; text-decoration: none; }
 .tabs .tabs-content .tab.active { display: block; }
 .tabs .tabs-content .row + .row { margin-top: 40px; }
 .tabs .tabs-content ul { list-style-type: none; text-align: center; }
-.tabs .tabs-content ul li { float: left; width: 25%; padding: 0 10px; box-sizing: border-box; }
+.tabs .tabs-content ul li { display: inline-block; padding: 0 30px; margin-bottom: 30px; height: 37px; }
+.tabs .tabs-content ul li img { height: 100%; }
 
 .footer { background: #04afef; }
 .footer-top { padding: 150px 0 110px 0; text-align: center; }
@@ -275,7 +276,7 @@ ul.social-links li a:hover { color: #282828; }
 }
 
 @media(max-width: 1499px){
-    .header { padding: 35px 50px 0 50px; }   
+    .header { padding: 35px 50px 0 50px; }
 }
 
 @media(max-width: 1260px){
@@ -291,13 +292,13 @@ ul.social-links li a:hover { color: #282828; }
 }
 
 @media(max-width: 1199px){
-    .header { padding: 25px 20px 0 20px; }   
+    .header { padding: 25px 20px 0 20px; }
     .logo-holder > a { width: auto; }
 
     .nav-holder { width: 68%; padding-left: 7%; }
     .nav-holder ul { line-height: 28px; font-size: 18px; }
     .nav-holder ul li + li { margin-left: 30px; }
-    .nav-holder .nav-main ul li.current-menu-item a:after, 
+    .nav-holder .nav-main ul li.current-menu-item a:after,
     .nav-holder .nav-main ul li a:hover:after { width: 100%; }
     .nav-dropdown li.menu-item-has-children > a { padding-bottom: 25px; }
     .nav-dropdown li.menu-item-has-children > a:after { top: 10px; }
@@ -305,7 +306,7 @@ ul.social-links li a:hover { color: #282828; }
 
 @media(max-width: 1024px){
     .logo-holder { width: auto; width: 200px; }
-    
+
     .nav-holder { width: auto; float: right; padding: 0; }
     .nav-holder ul { margin: 0; font-size: 16px; }
     .nav-holder ul li + li { margin-left: 20px; }
@@ -374,7 +375,7 @@ ul.social-links li a:hover { color: #282828; }
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
-        
+
     }
     .banner-cnt { width: auto; float: none; padding: 0 0 30px 0; }
     .banner-cnt h2 { font-size: 26px; line-height: 30px; }
@@ -438,13 +439,13 @@ ul.social-links li a:hover { color: #282828; }
 @media(max-width: 480px){
     .project-row + .project-row { margin-top: 30px; }
     .project-row { box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.2); }
-    
+
     .testim-box { padding-right: 0; }
 
     .footer .col { display: block; }
     .footer .col + .col { margin: 35px 0 0 0; }
     .footer .text-inner { max-width: none; }
-    .footer .form-container { margin-bottom: 30px; } 
+    .footer .form-container { margin-bottom: 30px; }
 
     ul.social-links li + li { margin-left: 20px; }
 }

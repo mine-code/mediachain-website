@@ -177,17 +177,15 @@ input::-moz-focus-inner { padding: 0; border: 0; }
 .projects-holder { padding: 100px 0; background: #eaeaea url('images/banner-bg.png') no-repeat center center; background-size: cover; }
 // .projects-holder:after { content: ''; background: url('images/bg-elements3.png') no-repeat left bottom; background-size: 60%; width: 420px; height: 256px; position: absolute; top: 0; left: 0; }
 .projects-holder .heading h2 { letter-spacing: 1px; padding-bottom: 30px; font-weight: bold; }
-.project-row + .project-row { margin-top: 100px; }
+.project-row + .project-row { margin-top: 50px; }
 .project-row .col { width: 50%; float: left; box-sizing: border-box; }
-
-.project-row-1 .col-text { padding-top: 30px; }
 
 .project-row-2 .col-link { padding: 80px 0 0 130px; }
 
 .project-row-3 { padding-top: 40px; }
 .project-row-3 .project-box-inner { max-width: 420px; padding-left: 130px; }
 
-.project-box-inner { max-width: 330px; }
+.project-box-inner { max-width: 420px; }
 .project-box-inner > h4 { line-height: 32px; padding-bottom: 20px; }
 .project-box-inner > h4 a { color: #282828; text-decoration: underline; transition: color .2s ease; }
 .project-box-inner > h4 a:hover { color: #00afef; }
@@ -267,6 +265,9 @@ ul.social-links li { display: inline-block; vertical-align: top; font-size: 24px
 ul.social-links li + li { margin-left: 40px; }
 ul.social-links li a { color: #fff; transition: color .3s ease; text-decoration: none; }
 ul.social-links li a:hover { color: #282828; }
+
+.banner-main .social-links a { color: #4a4a4a; margin-top: 20px; }
+.banner-main .social-links li + li { margin-left: 20px; }
 
 .footer-bottom { text-align: right; padding: 15px 0; }
 .footer-bottom p { color: #fff; }
@@ -388,7 +389,7 @@ ul.social-links li a:hover { color: #282828; }
     .projects-holder .heading h2 { font-size: 26px; line-height: 30px; padding-bottom: 30px; }
     .project-box-inner > h4 { font-size: 22px; line-height: 30px; }
     .project-row .col { width: auto; float: none; }
-    .project-row { padding: 20px 10px; background: #fff; box-shadow: 1px 1px 9px 2px rgba(0,0,0,0.2); }
+    .project-row { padding: 20px 10px; background: #fff; }
     .project-row + .project-row { margin-top: 50px; }
     .project-row-1 .col-text { padding-bottom: 20px; }
     .project-box-inner > p + a.custom-link { margin-top: 0; }
@@ -438,7 +439,6 @@ ul.social-links li a:hover { color: #282828; }
 
 @media(max-width: 480px){
     .project-row + .project-row { margin-top: 30px; }
-    .project-row { box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.2); }
 
     .testim-box { padding-right: 0; }
 

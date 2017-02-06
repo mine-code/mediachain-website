@@ -180,7 +180,11 @@ input::-moz-focus-inner { padding: 0; border: 0; }
 .project-row + .project-row { margin-top: 50px; }
 .project-row .col { width: 50%; float: left; box-sizing: border-box; }
 
+.projects-holder .project-row .col { float: right; }
+
 .project-row-2 .col-link { padding: 80px 0 0 130px; }
+
+.projects-holder .project-row-2 .col { float: left; }
 
 .project-row-3 { padding-top: 40px; }
 .project-row-3 .project-box-inner { max-width: 420px; padding-left: 130px; }
@@ -191,6 +195,7 @@ input::-moz-focus-inner { padding: 0; border: 0; }
 .project-box-inner > h4 a:hover { color: #00afef; }
 .project-box-inner > p { font-size: 17px; padding-bottom: 20px; }
 .project-box-inner > p + a.custom-link { margin-top: 20px; }
+.project-box-inner { margin-left: 60px; }
 
 a.custom-link { display: inline-block; font-size: 18px; position: relative; padding-left: 35px; color: #282828; transition: color .2s ease; }
 a.custom-link:before { content: ''; position: absolute; left: 0; top: 2px; width: 15px; height: 15px; background: url('images/triangle@x2.png') no-repeat 0 0; background-size: 15px 15px; }
@@ -198,7 +203,6 @@ a.custom-link:hover { color: #00afef; text-decoration: none; }
 
 /* how it works */
 .how-it-works { background: #0e3e4d; padding: 80px 0; position: relative; }
-.how-it-works:after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 50%; background: rgba(255,255,255,0.01); }
 .how-it-works h2 { color: #fff; padding-bottom: 50px; }
 
 .section-wrapper { padding: 100px 0; }
@@ -248,7 +252,7 @@ a.custom-link:hover { color: #00afef; text-decoration: none; }
 .tabs .tabs-content .row + .row { margin-top: 40px; }
 .tabs .tabs-content ul { list-style-type: none; text-align: center; }
 .tabs .tabs-content ul li { display: inline-block; padding: 0 30px; margin-bottom: 30px; height: 37px; }
-.tabs .tabs-content ul li img { height: 100%; }
+.tabs .tabs-content ul li img { max-height: 100%; }
 
 .footer { background: #04afef; }
 .footer-top { padding: 150px 0 110px 0; text-align: center; }
@@ -389,7 +393,7 @@ ul.social-links li a:hover { color: #282828; }
     .projects-holder .heading h2 { font-size: 26px; line-height: 30px; padding-bottom: 30px; }
     .project-box-inner > h4 { font-size: 22px; line-height: 30px; }
     .project-row .col { width: auto; float: none; }
-    .project-row { padding: 20px 10px; background: #fff; }
+    .project-row { padding: 20px 10px; }
     .project-row + .project-row { margin-top: 50px; }
     .project-row-1 .col-text { padding-bottom: 20px; }
     .project-box-inner > p + a.custom-link { margin-top: 0; }
@@ -448,4 +452,6 @@ ul.social-links li a:hover { color: #282828; }
     .footer .form-container { margin-bottom: 30px; }
 
     ul.social-links li + li { margin-left: 20px; }
+
+    .project-box-inner { margin-left: 0; }
 }

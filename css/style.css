@@ -13,7 +13,9 @@ header, footer, nav, section, article, aside, figure, details, summary { display
 body, html { height: 100%; }
 
 body {
-    font-family: 'GT Cinetype', courier, monospace;
+
+
+font-family: 'Baloo Bhai 2', cursive;
     font-size: 16px;
     line-height: 1.2;
     color: #282828;
